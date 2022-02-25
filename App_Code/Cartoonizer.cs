@@ -22,7 +22,7 @@ public class Cartoonizer
             var inFileStream = new FileStream(sPathSource, FileMode.Open);
             StreamContent imageContent = new StreamContent(inFileStream);
             imageContent.Headers.ContentType = new MediaTypeHeaderValue("image/jpeg");
-            formData.Headers.Add("X-Api-Key", "T775CGF-VW1MVKT-NQDY23S-XRP5YNR");
+            formData.Headers.Add("X-Api-Key", "PasteApiKeyHere");
             formData.Add(imageContent, "image", sourcePath);
             formData.Add(new StringContent("image"), "mode");
             formData.Add(new StringContent("jpg"), "format");
